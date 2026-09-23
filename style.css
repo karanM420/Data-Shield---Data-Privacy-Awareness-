@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #05070a;
+    color: #e8faff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #12343b;
+}
+
+.logo {
+    color: limegreen;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #a7c3c9;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: limegreen;
+    color: black;
+    text-shadow: none;
+    border-radius: 20px 20px;
+    transition: 0.3s;
+}
+
+.nav-links a.active {
+    background: limegreen;
+    color: black;
+    border-radius: 20px 20px;
+    text-shadow: none;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 6%;
+}
+
+.system-text {
+    color: limegreen;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+#abc {
+    color: limegreen;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-family: Arial, Helvetica;
+    font-size: 40px;
+    line-height: 1.05;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin-top: 30px;
+    color: #91a8ad;
+    font-size: 18px;
+}
+
+/* =========================
+AWARENESS CARDS
+========================= */
+
+.awareness {
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+    background: #080d11;
+    border: 1px solid #12343b;
+    transition: 0.3s;
+    border-radius: 30px 0 30px 0;
+}
+
+.card:hover {
+    border-color: limegreen;
+    transform: translateY(-10px);
+    box-shadow: 0 0 50px rgba(0, 229, 25, 0.35);
+}
+
+.card-number {
+    color: limegreen;
+    font-family: monospace;
+}
+
+.card h2 {
+    margin: 20px 0 12px;
+    font-size: 24px;
+    color: white;
+}
+
+.card:hover h2 {
+    text-shadow: 0 0 20px rgba(0, 255, 25, 0.9);
+}
+
+.card p {
+    color: #91a8ad;
+    margin-bottom: 25px;
+}
+
+.card a {
+    color: limegreen;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+/* =========================
+SURVEY
+========================= */
+
+.survey {
+    margin: 80px;
+    border-radius: 35px 35px 35px 35px;
+    padding: 70px 30px;
+    text-align: center;
+    border: 1px solid limegreen;
+    background: #080d11;
+}
+
+.survey h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.survey p {
+    color: #91a8ad;
+}
+
+.survey-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: limegreen;
+    color: #05070a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+
+}
+
+.survey-button:active {
+    padding: 12px 24px;
+    box-shadow: 0 0 25px rgba(0, 229, 25, 0.5);
+}
+
+/* =========================
+SURVEY COUNT
+========================= */
+
+.survey-count {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-count strong {
+    color: limegreen;
+    font-size: 55px;
+}
+
+.survey-count span {
+    color: #91a8ad;
+    letter-spacing: 3px;
+    font-family: monospace;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #12343b;
+    color: #587278;
+    font-family: monospace;
+    font-size: 12px;
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+.navbar {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero {
+    min-height: 65vh;
+    padding: 60px 6%;
+}
+
+.awareness {
+    grid-template-columns: 1fr;
+    padding: 50px 6%;
+}
+
+.survey {
+    margin: 50px 6%;
+}
+
+}
+
+.info-section {
+    margin: 100px 8%;
+    padding: 60px 50px;
+    border: 1px solid limegreen;
+    border-radius: 35px 35px 35px 35px;
+    background: #080d11;
+}
+
+.section-tag {
+    color: limegreen;
+    font-family: monospace;
+}
+
+.info-section h2 {
+    margin: 20px 0;
+    font-size: 40px;
+    color: white;
+}
+
+.info-section p {
+    margin: 20px 0;
+    color: #91a8ad;
+    font-family: monospace;
+    max-width: 900px;
+}
+
+.info-section h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: limegreen;
+    font-family: monospace;
+}
+
+.info-section ul {
+    margin-left: 25px;
+    color: #91a8ad;
+    font-family: monospace;
+}
+
+.info-section li {
+    margin: 8px 0;
+}
